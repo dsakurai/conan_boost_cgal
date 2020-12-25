@@ -11,7 +11,7 @@ $ cmake ..
 Misc
 ====
 
-We force the build of Boost because
-recent Boost binary is not available for Apple clang.
-This is apparently because clang on macOS Catalina does not fully support C++20
-yet, which was overlooked by people who provided Boost for Conan.
+We force the local build of Boost because
+instead of downloading prebuilt Boost binary because it is not available for Apple clang on macOS Catalina.
+This is apparently because clang, at least on that platform today, does not fully support C++20
+yet, which was overlooked by people who provided CGAL for Conan.
